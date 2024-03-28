@@ -48,3 +48,6 @@ Added event listeners to handle navigation between pages.
 Display Users for Specific Page:	Implemented a function to display users for a specific page based on the current page index and the number of users per page.
 Update Pagination Controls:	Developed a function to update pagination controls dynamically based on the current page index and the total number of users.
 Initialization:  Initialized pagination on page load by fetching users from local storage and displaying the first page of users.
+
+#NOTE
+Pagination controls work after clicking on the Next Button. Initially, while adding the users, all the users will be displayed on the same page.
