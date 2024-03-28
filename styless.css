@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Add User Form */
+#addUserForm {
+    margin-bottom: 20px;
+}
+
+#addUserForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#addUserForm input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#addUserForm button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#addUserForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Search User Input */
+#searchUserInput {
+    width: calc(100% - 220px);
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+/* Users List */
+#usersList {
+    margin-bottom: 20px;
+}
+
+#usersList div {
+    padding: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+}
+
+.delete-btn {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Clear All Users Button */
+#clearAllUsersBtn {
+    display: block;
+    margin-bottom: 20px;
+    padding: 8px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#clearAllUsersBtn:hover {
+    background-color: #c82333;
+}
+
+/* Pagination Controls */
+#pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#pagination button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#pagination button:hover {
+    background-color: #0056b3;
+}
+
+#currentPage {
+    font-weight: bold;
+    margin: 0 10px;
+}

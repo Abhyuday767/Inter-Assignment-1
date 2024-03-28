@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User List</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="app.js" async></script>
+</head>
+<body>
+    <h1>User List</h1>
+
+     <!-- Search User -->
+     <input type="text" id="searchUserInput" placeholder="Search by name...">
+
+    <div id="usersList"></div>
+
+    <!-- Pagination controls -->
+    <div id="pagination">
+        <button id="prevPageBtn" disabled>Previous</button>
+        <span id="currentPage">Page 1</span>
+        <button id="nextPageBtn">Next</button>
+    </div>
+
+    <!-- Add User Form -->
+    <form id="addUserForm">
+        <label for="userName">Enter Username:</label>
+        <input type="text" id="userName" required>
+        <button type="submit">Add User</button>
+    </form>
+
+     <!-- Button to clear all users -->
+     <button id="clearAllUsersBtn">Clear All Users</button>
+    
+</body>
+</html>

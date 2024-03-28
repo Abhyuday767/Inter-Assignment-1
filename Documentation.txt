@@ -1,0 +1,17 @@
+Part 1: Debugging
+Bugs Identified and Fixes:
+
+
+Syntax Error:
+In fetchUsers function, setTimout should be setTimeout.
+Fix: Corrected the spelling to setTimeout.
+
+
+Logical Error:
+In the displayUsers function, userListDiv is selected with #userList, but the HTML uses usersList.
+Fix: Changed #userList to #usersList to match the HTML.
+
+
+Data Fetching Error:
+The callback function in fetchUsers is receiving user, but it should be users.
+Fix: Changed (user) to (users) in the callback function.
