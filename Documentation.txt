@@ -1,17 +1,50 @@
 Part 1: Debugging
+
 Bugs Identified and Fixes:
 
+Syntax Error in setTimeout Function:
 
-Syntax Error:
-In fetchUsers function, setTimout should be setTimeout.
-Fix: Corrected the spelling to setTimeout.
+Issue: The setTimout function is misspelled as setTimout, resulting in a syntax error.
+Fix: Corrected the function name to setTimeout.
+Incorrect ID Selector in displayUsers Function:
+
+Issue: The document.querySelector function is used with an incorrect ID selector (#userList) in the displayUsers function.
+Fix: Changed the ID selector to #usersList to match the HTML element.
+Typo in innerhtml Property:
+
+Issue: The property innerhtml is used with a lowercase 'i' in the displayUsers function.
+Fix: Corrected the property name to innerHTML with an uppercase 'I'.
 
 
-Logical Error:
-In the displayUsers function, userListDiv is selected with #userList, but the HTML uses usersList.
-Fix: Changed #userList to #usersList to match the HTML.
 
 
-Data Fetching Error:
-The callback function in fetchUsers is receiving user, but it should be users.
-Fix: Changed (user) to (users) in the callback function.
+Part 2: Feature Enhancement
+
+Add User Feature:
+
+Form Submission Event Listener:	Added an event listener for form submission to handle adding new users.
+Local Storage Interaction:	Utilized local storage to store user data.
+Display Updated User List:	Updated the user list display after adding a new user.
+
+
+Delete User Feature:
+
+Event Delegation for Delete Button:	Implemented event delegation to handle delete button clicks dynamically.
+Local Storage Interaction:	Updated local storage to remove the deleted user.
+Display Updated User List:	Updated the user list display after deleting a user.
+Search User Feature:  Implemented a function to filter users based on the search query entered by the user.
+Update Display According to Search Results: Updated the user list display to show filtered users or a message if no users match the search query.
+
+
+
+
+Part 3: Pagination Feature(Optional)
+
+Pagination Controls:
+
+Created pagination controls consisting of "Previous" and "Next" buttons and a display for the current page number.
+Added event listeners to handle navigation between pages.
+
+Display Users for Specific Page:	Implemented a function to display users for a specific page based on the current page index and the number of users per page.
+Update Pagination Controls:	Developed a function to update pagination controls dynamically based on the current page index and the total number of users.
+Initialization:  Initialized pagination on page load by fetching users from local storage and displaying the first page of users.
